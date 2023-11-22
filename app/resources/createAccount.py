@@ -1,42 +1,48 @@
+import json
 import logging
-from datetime import datetime
-from fastapi import APIRouter, status, Depends, HTTPException
-from fastapi.responses import JSONResponse
+from typing import List
+from fastapi import Depends, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer
+from jose import JWTError, jwt
+from jose.constants import ALGORITHMS
 from motor.motor_asyncio import AsyncIOMotorClient
-from fastapi.encoders import jsonable_encoder
 
-from app.auth import get_db
-from app.models.model import createAccountModel
+from app.config import keycloak_settings, dbclient
 
-router = APIRouter(
-    tags=["createAccount"],
-    responses={404: {"description": "Not found"}},
-)
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=keycloak_settings.keycloak_url_token)
 
+roles = json.loads(open("app/roles.json").read())
 
-@router.post("/createAccount1")
-async def post_createAccount1(
-    account_data: createAccountModel,
-    db: AsyncIOMotorClient = Depends(get_db(resource="resource1", method="POST"))
-):
-    """Endpoint para crear un dato en la base de datos"""
-    data = jsonable_encoder(account_data)
-    data["created_at"] = datetime.now()
-    data["updated_at"] = datetime.now()
+# Funcion para verificar si el usuario tiene permisos para acceder a un recurso
+def has_permission(user_roles: List[str], resource: str, method: str) -> bool:
+    for role in user_roles:
+        if role in roles:
+            if resource in roles[role]:
+                if method in roles[role][resource]:
+                    return True
+    return False
 
-    logging.info(f"post createAccount1 with: {data}")
+def get_db(resource: str, method: str, token: str = Depends(oauth2_scheme)) -> AsyncIOMotorClient:
+    try:
+        payload = jwt.decode(token, keycloak_settings.keycloak_public_key, algorithms=[ALGORITHMS.RS256],
+                            options={"verify_signature": True, "verify_aud": False, "exp": True})
+        logging.debug(payload)
+        db_name: str = payload.get("bdName")
+        roles: List[str] = payload.get("resource_access")[keycloak_settings.keycloak_client_id]["roles"]
 
-    # Buscar si el dato ya existe
-    db_data = await db["createAccount"].find_one({"run": data['run']})
-    if db_data:
-        # Si el dato ya existe, retornar un error
-        raise HTTPException(
-            status_code=status.HTTP_409_CONFLICT,
-            detail="Data already exists"
+        if not has_permission(roles, resource, method):
+            logging.error(f"Not enough permissions for {roles} to access {resource} with method {method}")
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Not enough permissions",
+                headers={"WWW-Authenticate": "Bearer"},
+            )
+    except JWTError as err:
+        logging.error(err)
+        credentials_exception = HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Could not validate credentials",
+            headers={"WWW-Authenticate": "Bearer"},
         )
-
-    # Si el dato no existe, crearlo con sus fechas de creación
-    new_data = await db["createAccount"].insert_one(data)
-
-    # Retornar el id del nuevo dato
-    return JSONResponse(content={"inserted_id": str(new_data.inserted_id)})
+        raise credentials_exception
+    return dbclient[db_name]
