@@ -1,0 +1,98 @@
+2023-11-21 00:31:26.531 [8] [config.py:114] [INFO] Starting app
+2023-11-21 00:31:52.884 [8] [example.py:32] [INFO] post example with: {'name': 'slkdjfls', 'number': 213}
+2023-11-21 00:31:53.022 [8] [example.py:54] [INFO] get all examples
+2023-11-21 00:31:59.050 [8] [example.py:54] [INFO] get all examples
+2023-11-21 00:31:59.088 [8] [example.py:22] [INFO] Example1
+2023-11-21 00:32:05.272 [8] [example.py:32] [INFO] post example with: {'name': 'sjfdj', 'number': 123}
+2023-11-21 00:32:05.311 [8] [example.py:54] [INFO] get all examples
+2023-11-21 00:33:18.441 [8] [example.py:32] [INFO] post example with: {'name': 'prueba', 'number': 321}
+2023-11-21 00:33:18.479 [8] [example.py:54] [INFO] get all examples
+2023-11-21 00:33:21.773 [8] [example.py:54] [INFO] get all examples
+2023-11-21 00:33:21.794 [8] [example.py:22] [INFO] Example1
+2023-11-21 00:33:30.631 [8] [example.py:80] [INFO] put example with data: {'name': 'prueba', 'number': 3215}
+2023-11-21 00:33:30.632 [8] [example.py:83] [INFO] put example with name: prueba and data: {'number': 3215}
+2023-11-21 00:33:30.658 [8] [example.py:54] [INFO] get all examples
+2023-11-21 00:33:35.087 [8] [example.py:54] [INFO] get all examples
+2023-11-21 00:33:35.101 [8] [example.py:22] [INFO] Example1
+2023-11-21 00:33:49.641 [8] [example.py:80] [INFO] put example with data: {'name': 'prueba', 'number': 123}
+2023-11-21 00:33:49.643 [8] [example.py:83] [INFO] put example with name: prueba and data: {'number': 123}
+2023-11-21 00:33:49.659 [8] [example.py:54] [INFO] get all examples
+2023-11-21 00:33:54.599 [8] [example.py:95] [INFO] delete example with name: prueba
+2023-11-21 00:33:54.678 [8] [example.py:54] [INFO] get all examples
+2023-11-21 00:33:58.300 [8] [example.py:54] [INFO] get all examples
+2023-11-21 00:33:58.324 [8] [example.py:22] [INFO] Example1
+2023-11-21 00:34:13.311 [8] [example.py:32] [INFO] post example with: {'name': 'prueba', 'number': 213}
+2023-11-21 00:34:13.346 [8] [example.py:54] [INFO] get all examples
+2023-11-21 00:34:26.658 [8] [example.py:54] [INFO] get all examples
+2023-11-21 00:34:26.702 [8] [example.py:22] [INFO] Example1
+2023-11-21 00:40:34.675 [77] [config.py:114] [INFO] Starting app
+2023-11-21 00:43:11.571 [92] [config.py:114] [INFO] Starting app
+2023-11-21 00:45:04.437 [107] [config.py:114] [INFO] Starting app
+2023-11-21 00:45:50.342 [107] [createAccount.py:50] [INFO] post createAccount1 with: {'email': 'marcelovilches64@gmail.com', 'pass': 'marcelo123', 'pass_confirm': 'marcelo123', 'name': 'marcelo', 'last_name': 'marcelo', 'last_name2': 'marcelo', 'run': '123123', 'phone': '82173812', 'phone2': '23423', 'created_at': datetime.datetime(2023, 11, 21, 0, 45, 50, 341788), 'updated_at': datetime.datetime(2023, 11, 21, 0, 45, 50, 341803)}
+2023-11-21 01:37:34.104 [107] [example.py:54] [INFO] get all examples
+2023-11-21 01:37:34.179 [107] [example.py:22] [INFO] Example1
+2023-11-21 01:57:07.021 [107] [example.py:54] [INFO] get all examples
+2023-11-21 01:57:07.091 [107] [example.py:22] [INFO] Example1
+2023-11-21 01:57:12.279 [107] [example.py:32] [INFO] post example with: {'name': 'qwewqe', 'number': 1234}
+2023-11-21 01:57:12.346 [107] [example.py:54] [INFO] get all examples
+2023-11-21 02:18:54.078 [107] [example.py:22] [INFO] Example1
+2023-11-21 02:18:54.211 [107] [example.py:54] [INFO] get all examples
+2023-11-21 02:19:00.971 [107] [example.py:32] [INFO] post example with: {'name': 'dsafasd', 'number': 142}
+2023-11-21 02:19:01.055 [107] [example.py:54] [INFO] get all examples
+2023-11-21 02:21:06.762 [107] [example.py:32] [INFO] post example with: {'name': 'string', 'number': 0}
+2023-11-21 02:24:49.071 [107] [createAccount.py:50] [INFO] post createAccount1 with: {'email': 'marcelovilches64@gmail.com', 'pass': '123', 'pass_confirm': '123', 'name': 'qwe', 'last_name': 'qwe', 'last_name2': 'qwe', 'run': 'qwe', 'phone': 'qwe', 'phone2': 'qwe', 'created_at': datetime.datetime(2023, 11, 21, 2, 24, 49, 70722), 'updated_at': datetime.datetime(2023, 11, 21, 2, 24, 49, 70729)}
+2023-11-21 02:25:42.620 [107] [example.py:32] [INFO] post example with: {'name': 'string', 'number': 0}
+2023-11-21 02:34:30.401 [883] [config.py:114] [INFO] Starting app
+2023-11-21 02:41:57.769 [940] [config.py:114] [INFO] Starting app
+2023-11-21 02:42:51.550 [940] [createAccount.py:26] [INFO] post createAccount1 with: {'email': 'asdas', 'pass_': '123123', 'pass_confirm': '12312', 'name': 'dfsd', 'last_name': 'sdfsd', 'last_name2': 'sdfsdf', 'run': '23423', 'phone': '123123', 'phone2': '234234', 'created_at': datetime.datetime(2023, 11, 21, 2, 42, 51, 550215), 'updated_at': datetime.datetime(2023, 11, 21, 2, 42, 51, 550221)}
+2023-11-21 02:54:09.846 [940] [example.py:54] [INFO] get all examples
+2023-11-21 02:54:09.881 [940] [example.py:22] [INFO] Example1
+2023-11-21 02:54:19.630 [940] [example.py:54] [INFO] get all examples
+2023-11-21 02:54:19.652 [940] [example.py:22] [INFO] Example1
+2023-11-21 02:54:26.568 [940] [example.py:32] [INFO] post example with: {'name': 'sdas', 'number': 123}
+2023-11-21 02:54:26.646 [940] [example.py:54] [INFO] get all examples
+2023-11-21 03:03:07.102 [940] [createAccount.py:26] [INFO] post createAccount1 with: {'email': 'string', 'pass_': 'string', 'pass_confirm': 'string', 'name': 'string', 'last_name': 'string', 'last_name2': 'string', 'run': 'string', 'phone': 'string', 'phone2': 'string', 'created_at': datetime.datetime(2023, 11, 21, 3, 3, 7, 102810), 'updated_at': datetime.datetime(2023, 11, 21, 3, 3, 7, 102821)}
+2023-11-21 04:25:54.052 [1681] [config.py:114] [INFO] Starting app
+2023-11-21 04:28:09.119 [1696] [config.py:114] [INFO] Starting app
+2023-11-21 04:30:56.316 [1711] [config.py:114] [INFO] Starting app
+2023-11-21 04:38:37.982 [8] [config.py:114] [INFO] Starting app
+2023-11-21 04:41:59.012 [8] [config.py:114] [INFO] Starting app
+2023-11-21 04:46:21.141 [36] [config.py:114] [INFO] Starting app
+2023-11-21 04:53:26.277 [8] [config.py:114] [INFO] Starting app
+2023-11-21 04:54:31.634 [8] [config.py:114] [INFO] Starting app
+2023-11-21 04:56:51.460 [23] [config.py:114] [INFO] Starting app
+2023-11-21 04:57:08.812 [8] [config.py:114] [INFO] Starting app
+2023-11-21 04:57:45.072 [9] [config.py:114] [INFO] Starting app
+2023-11-21 05:25:14.252 [9] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'string', 'pass_': 'string', 'pass_confirm': 'string', 'name': 'string', 'last_name': 'string', 'last_name2': 'string', 'run': 'string', 'phone': 'string', 'phone2': 'string', 'created_at': datetime.datetime(2023, 11, 21, 5, 25, 14, 252112), 'updated_at': datetime.datetime(2023, 11, 21, 5, 25, 14, 252126)}
+2023-11-21 05:40:29.147 [9] [example.py:54] [INFO] get all examples
+2023-11-21 05:40:29.180 [9] [example.py:22] [INFO] Example1
+2023-11-21 05:40:38.069 [9] [example.py:54] [INFO] get all examples
+2023-11-21 05:40:38.112 [9] [example.py:22] [INFO] Example1
+2023-11-21 05:40:45.273 [9] [example.py:32] [INFO] post example with: {'name': 'sdfsd', 'number': 345}
+2023-11-21 05:40:45.350 [9] [example.py:54] [INFO] get all examples
+2023-11-21 05:45:31.896 [9] [auth.py:44] [ERROR] Signature has expired.
+2023-11-21 05:45:50.185 [9] [auth.py:44] [ERROR] Signature has expired.
+2023-11-21 05:46:12.090 [9] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'string', 'pass_': 'string', 'pass_confirm': 'string', 'name': 'string', 'last_name': 'string', 'last_name2': 'string', 'run': 'string', 'phone': 'string', 'phone2': 'string', 'created_at': datetime.datetime(2023, 11, 21, 5, 46, 12, 90242), 'updated_at': datetime.datetime(2023, 11, 21, 5, 46, 12, 90249)}
+2023-11-21 17:06:35.330 [300] [config.py:114] [INFO] Starting app
+2023-11-21 17:07:53.869 [9] [config.py:114] [INFO] Starting app
+2023-11-21 17:25:40.773 [131] [config.py:114] [INFO] Starting app
+2023-11-21 17:49:08.484 [131] [auth.py:44] [ERROR] Not enough segments
+2023-11-21 18:16:54.216 [131] [auth.py:44] [ERROR] Not enough segments
+2023-11-21 18:29:46.334 [131] [auth.py:44] [ERROR] Not enough segments
+2023-11-21 18:51:19.421 [131] [auth.py:44] [ERROR] Not enough segments
+2023-11-21 18:53:19.202 [131] [auth.py:44] [ERROR] Not enough segments
+2023-11-21 19:00:02.063 [131] [auth.py:44] [ERROR] Not enough segments
+2023-11-21 19:00:42.090 [131] [auth.py:44] [ERROR] Not enough segments
+2023-11-21 19:09:21.311 [131] [auth.py:44] [ERROR] Signature has expired.
+2023-11-21 19:19:20.170 [131] [auth.py:44] [ERROR] Not enough segments
+2023-11-21 22:07:50.353 [8] [config.py:114] [INFO] Starting app
+2023-11-21 22:08:42.422 [8] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'marcelovilches6@gmail.com', 'pass_': 'asnaebu123', 'pass_confirm': 'asnaebu123', 'name': 'chelo', 'last_name': 'vilches', 'last_name2': 'suazo', 'run': '2019323', 'phone': '123123', 'phone2': '12321321', 'created_at': datetime.datetime(2023, 11, 21, 22, 8, 42, 421616), 'updated_at': datetime.datetime(2023, 11, 21, 22, 8, 42, 421628)}
+2023-11-21 22:09:51.225 [8] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'petes@gmail.com', 'pass_': '123', 'pass_confirm': '123', 'name': 'pepe', 'last_name': 'mati', 'last_name2': 'edgard', 'run': '123123', 'phone': '12', 'phone2': '12', 'created_at': datetime.datetime(2023, 11, 21, 22, 9, 51, 224920), 'updated_at': datetime.datetime(2023, 11, 21, 22, 9, 51, 224923)}
+2023-11-21 22:10:15.618 [8] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'petes@gmail.com', 'pass_': '123', 'pass_confirm': '123', 'name': 'pepe', 'last_name': 'mati', 'last_name2': 'edgard', 'run': '81283812', 'phone': '12', 'phone2': '12', 'created_at': datetime.datetime(2023, 11, 21, 22, 10, 15, 617895), 'updated_at': datetime.datetime(2023, 11, 21, 22, 10, 15, 617908)}
+2023-11-21 22:12:17.549 [8] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'asdsad@gmail.com', 'pass_': '123', 'pass_confirm': '12445', 'name': 'pepe', 'last_name': 'mati', 'last_name2': 'edgard', 'run': '81283812', 'phone': '12', 'phone2': '12', 'created_at': datetime.datetime(2023, 11, 21, 22, 12, 17, 549343), 'updated_at': datetime.datetime(2023, 11, 21, 22, 12, 17, 549357)}
+2023-11-21 22:12:36.215 [8] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'asdsad@gmail.com', 'pass_': '123', 'pass_confirm': '12445', 'name': 'pepe', 'last_name': 'mati', 'last_name2': 'edgard', 'run': '7777', 'phone': '12', 'phone2': '12', 'created_at': datetime.datetime(2023, 11, 21, 22, 12, 36, 215265), 'updated_at': datetime.datetime(2023, 11, 21, 22, 12, 36, 215272)}
+2023-11-21 22:13:37.509 [8] [example.py:54] [INFO] get all examples
+2023-11-21 22:13:37.575 [8] [example.py:22] [INFO] Example1
+2023-11-21 22:18:21.049 [8] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'marcelovilches6@gmail.com', 'pass_': 'asnaebu123', 'pass_confirm': 'asnaebu123', 'name': 'chelo', 'last_name': 'vilches', 'last_name2': 'suazo', 'run': '1', 'phone': '123123', 'phone2': '12321321', 'created_at': datetime.datetime(2023, 11, 21, 22, 18, 21, 49000), 'updated_at': datetime.datetime(2023, 11, 21, 22, 18, 21, 49009)}
+2023-11-21 22:18:30.995 [8] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'marcelovilches6@gmail.com', 'pass_': 'asnaebu123', 'pass_confirm': 'asnaebu123', 'name': 'chelo', 'last_name': 'vilches', 'last_name2': 'suazo', 'run': '4', 'phone': '123123', 'phone2': '12321321', 'created_at': datetime.datetime(2023, 11, 21, 22, 18, 30, 995219), 'updated_at': datetime.datetime(2023, 11, 21, 22, 18, 30, 995236)}
+2023-11-21 22:54:06.700 [8] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'marcelovilches6@gmail.com', 'pass_': 'asnaebu123', 'pass_confirm': 'asnaebu123', 'name': 'chelo', 'last_name': 'vilches', 'last_name2': 'suazo', 'run': '4', 'phone': '123123', 'phone2': '12321321', 'created_at': datetime.datetime(2023, 11, 21, 22, 54, 6, 699715), 'updated_at': datetime.datetime(2023, 11, 21, 22, 54, 6, 699721)}

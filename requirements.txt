@@ -1,0 +1,10 @@
+# FastAPI
+fastapi
+pydantic==1.*
+uvicorn
+asgi-logger
+gunicorn
+motor
+
+python-jose[cryptography]
+httpx

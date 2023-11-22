@@ -1,0 +1,37 @@
+default_language_version:
+    python: python3.11
+repos:
+-   repo: local
+    hooks:
+    -   id: pipenv
+        name: create python enviroment
+        entry: pipenv install -r requirements-dev.txt
+        language: system
+        pass_filenames: false
+
+    -   id: ruff
+        name: run ruff checks
+        entry: pipenv run ruff .
+        language: system
+        pass_filenames: false
+        args: ['--ignore', 'E501','--exclude', 'tests' ] # Ignorar error "line too long", excluir archivos de testing
+
+    -   id: bandit
+        name: run bandit checks
+        entry: pipenv run bandit
+        language: system
+        types: [python] # Para analizar solo los archivos de python
+        args: ["--exclude","tests"] # Excluimos los archivos de testing
+
+    # -   id: pytest
+    #     name: run pytest
+    #     entry: pipenv run pytest --cov-report=xml --cov=. tests
+    #     language: system
+    #     pass_filenames: false
+
+    -   id: sonar-scanner
+        name: run sonar-scanner
+        # Para ejecutar en Windows, reemplazar ${pwd} por .:/usr/src
+        entry: docker run --network=host --privileged --rm -v ${pwd} -e SONAR_SCANNER_OPTS="-Dsonar.projectKey=fastapi_base" -e SONAR_LOGIN="sqp_99723155b75c326ffa4d9ae50d35174690e9c6eb" sonarsource/sonar-scanner-cli
+        language: system
+        pass_filenames: false

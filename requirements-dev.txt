@@ -1,0 +1,16 @@
+# FastAPI
+fastapi
+pydantic
+uvicorn
+asgi-logger
+gunicorn
+motor
+
+python-jose[cryptography]
+httpx
+
+#pre-commit
+pytest-cov
+pytest-dotenv
+ruff
+bandit

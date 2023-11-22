@@ -1,0 +1,10 @@
+{
+    "role1": {
+        "resource1": ["GET", "POST", "PUT", "DELETE"], 
+        "resource2": ["GET", "POST"]
+    },
+    "role2": {
+        "resource1": ["GET"],
+        "resource2": ["GET", "POST"]
+    }
+}

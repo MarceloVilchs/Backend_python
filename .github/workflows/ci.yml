@@ -1,0 +1,45 @@
+name: Continuous Integration
+on: [push, pull_request]
+
+jobs:
+  ruff:
+    name: Code Quality (Ruff)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run Ruff
+        uses: chartboost/ruff-action@v1
+        with:
+          args: --ignore E501 --exclude tests # Ignorar error "line too long", excluir tests
+
+  build:
+    name: Build Docker image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Set up Docker Compose
+        run: docker-compose build
+      - name: Up Docker Compose
+        run: docker-compose up -d
+      - name: Tear down Docker Compose
+        run: docker-compose down
+
+  security_checks:
+    runs-on: ubuntu-latest
+    name: Security check (Bandit)
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Security check - Bandit
+        uses: ioggstream/bandit-report-artifacts@v0.0.2
+        with:
+          project_path: app/
+          ignore_failure: false
+      - name: Security check report artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: Security report
+          path: output/security_report.txt
