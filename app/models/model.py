@@ -1,5 +1,5 @@
 from bson import ObjectId
-
+from datetime import date
 from pydantic import BaseModel
 
 
@@ -41,6 +41,24 @@ class createAccountModel(BaseModel):
     phone: str
     phone2: str 
     # En la base de datos se guarda adicionalmente con fechas de creación y actualización
+
+    class Config:
+        arbitrary_types_allowed = True
+        json_encoders = {
+            ObjectId: str
+        }
+
+
+
+class usuarioFormularioModel(BaseModel):
+    email: str
+    name: str
+    last_name: str
+    last_name2: str
+    fecha : date
+    phone: int
+    hora : int
+    estado_pago : str
 
     class Config:
         arbitrary_types_allowed = True
