@@ -1,0 +1,51 @@
+2023-11-23 13:40:15.098 [8] [config.py:114] [INFO] Starting app
+2023-11-23 13:42:01.147 [8] [config.py:114] [INFO] Starting app
+2023-11-23 13:47:22.595 [9] [config.py:114] [INFO] Starting app
+2023-11-23 13:51:58.912 [38] [config.py:114] [INFO] Starting app
+2023-11-23 13:52:39.698 [48] [config.py:114] [INFO] Starting app
+2023-11-23 13:52:58.975 [8] [config.py:114] [INFO] Starting app
+2023-11-23 13:54:12.736 [16] [config.py:114] [INFO] Starting app
+2023-11-23 13:54:16.068 [17] [config.py:114] [INFO] Starting app
+2023-11-23 13:54:33.064 [9] [config.py:114] [INFO] Starting app
+2023-11-23 13:56:26.219 [9] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'asjdjasd@gmail.com', 'pass_': '1234', 'pass_confirm': '1234', 'name': 'juan', 'last_name': 'perez', 'last_name2': 'lopez', 'run': '20199999-0', 'phone': '19239123', 'phone2': '293492394', 'created_at': datetime.datetime(2023, 11, 23, 13, 56, 26, 219365), 'updated_at': datetime.datetime(2023, 11, 23, 13, 56, 26, 219375)}
+2023-11-23 13:57:10.528 [9] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'asjdjasd@gmail.com', 'pass_': '1234', 'pass_confirm': '1234', 'name': 'juan', 'last_name': 'perez', 'last_name2': 'lopez', 'run': '20199999-05', 'phone': '19239123', 'phone2': '293492394', 'created_at': datetime.datetime(2023, 11, 23, 13, 57, 10, 528330), 'updated_at': datetime.datetime(2023, 11, 23, 13, 57, 10, 528353)}
+2023-11-23 13:57:20.405 [9] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'asjdjasd@gmail.com', 'pass_': '1234', 'pass_confirm': '1234', 'name': 'juan', 'last_name': 'perez', 'last_name2': 'lopez', 'run': '20199999-056', 'phone': '19239123', 'phone2': '293492394', 'created_at': datetime.datetime(2023, 11, 23, 13, 57, 20, 405367), 'updated_at': datetime.datetime(2023, 11, 23, 13, 57, 20, 405375)}
+2023-11-23 13:57:53.555 [9] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'marcelovilches6@gmail.com', 'pass_': 'asnaebu123', 'pass_confirm': '45643', 'name': 'chelo', 'last_name': 'vilches', 'last_name2': 'suazo', 'run': '1723712756765765756756756', 'phone': '123123', 'phone2': '12321321', 'created_at': datetime.datetime(2023, 11, 23, 13, 57, 53, 555173), 'updated_at': datetime.datetime(2023, 11, 23, 13, 57, 53, 555181)}
+2023-11-23 19:45:42.784 [142] [config.py:114] [INFO] Starting app
+2023-11-23 19:46:50.089 [151] [config.py:114] [INFO] Starting app
+2023-11-23 19:48:10.823 [159] [config.py:114] [INFO] Starting app
+2023-11-23 19:49:23.457 [175] [config.py:114] [INFO] Starting app
+2023-11-23 19:49:37.371 [176] [config.py:114] [INFO] Starting app
+2023-11-23 19:53:59.948 [205] [config.py:114] [INFO] Starting app
+2023-11-23 19:56:45.382 [227] [config.py:114] [INFO] Starting app
+2023-11-23 19:57:58.041 [235] [config.py:114] [INFO] Starting app
+2023-11-23 19:59:57.977 [250] [config.py:114] [INFO] Starting app
+2023-11-23 20:00:20.976 [251] [config.py:114] [INFO] Starting app
+2023-11-23 20:00:36.855 [259] [config.py:114] [INFO] Starting app
+2023-11-23 20:00:49.710 [260] [config.py:114] [INFO] Starting app
+2023-11-23 20:01:51.451 [268] [config.py:114] [INFO] Starting app
+2023-11-23 20:04:00.100 [283] [config.py:114] [INFO] Starting app
+2023-11-23 20:30:50.412 [477] [config.py:114] [INFO] Starting app
+2023-11-23 20:32:38.189 [486] [config.py:114] [INFO] Starting app
+2023-11-23 20:34:15.986 [501] [config.py:114] [INFO] Starting app
+2023-11-23 20:35:04.873 [501] [usuarioFormulario.py:125] [INFO] Creando cita con: {'email': 'marcelovilches64@gmail.com', 'name': 'marcelo', 'last_name': 'vilches', 'last_name2': 'suazo', 'fecha': datetime.date(2023, 11, 23), 'phone': 950817425, 'hora': '13:30', 'estado_pago': 'Por Pagar', 'created_at': datetime.datetime(2023, 11, 23, 20, 35, 4, 873449), 'updated_at': datetime.datetime(2023, 11, 23, 20, 35, 4, 873450)}
+2023-11-23 20:38:08.808 [535] [config.py:114] [INFO] Starting app
+2023-11-23 20:39:13.778 [543] [config.py:114] [INFO] Starting app
+2023-11-23 20:42:09.318 [565] [config.py:114] [INFO] Starting app
+2023-11-23 20:43:09.536 [573] [config.py:114] [INFO] Starting app
+2023-11-23 20:49:48.119 [617] [config.py:114] [INFO] Starting app
+2023-11-23 20:51:05.331 [617] [usuarioFormulario.py:107] [INFO] post_usuario_formulario with: {'email': 'string', 'name': 'string', 'last_name': 'string', 'last_name2': 'string', 'fecha': '2023-11-23', 'phone': 0, 'hora': 0, 'estado_pago': 'string', 'created_at': datetime.datetime(2023, 11, 23, 20, 51, 5, 331203), 'updated_at': datetime.datetime(2023, 11, 23, 20, 51, 5, 331213)}
+2023-11-23 20:51:33.585 [617] [usuarioFormulario.py:26] [INFO] Obteniendo todos los datos de usuarios formulario
+2023-11-23 20:52:18.267 [617] [usuarioFormulario.py:53] [INFO] put_usuario with nombre: marcelo and data: {'email': 'string', 'name': 'string', 'last_name': 'string', 'last_name2': 'string', 'fecha': '2023-11-23', 'phone': 0, 'hora': 0, 'estado_pago': 'string'}
+2023-11-23 20:52:20.188 [617] [usuarioFormulario.py:53] [INFO] put_usuario with nombre: marcelo and data: {'email': 'string', 'name': 'string', 'last_name': 'string', 'last_name2': 'string', 'fecha': '2023-11-23', 'phone': 0, 'hora': 0, 'estado_pago': 'string'}
+2023-11-23 20:56:05.375 [617] [auth.py:44] [ERROR] Signature has expired.
+2023-11-23 20:56:44.685 [617] [auth.py:44] [ERROR] Signature has expired.
+2023-11-23 20:57:06.282 [617] [auth.py:44] [ERROR] Signature has expired.
+2023-11-23 20:57:37.394 [617] [auth.py:44] [ERROR] Signature has expired.
+2023-11-23 20:58:21.206 [617] [usuarioFormulario.py:79] [INFO] delete_usuario with nombre: string
+2023-11-23 20:58:41.385 [617] [usuarioFormulario.py:107] [INFO] post_usuario_formulario with: {'email': 'string', 'name': 'string', 'last_name': 'string', 'last_name2': 'string', 'fecha': '2023-11-23', 'phone': 0, 'hora': 0, 'estado_pago': 'string', 'created_at': datetime.datetime(2023, 11, 23, 20, 58, 41, 385229), 'updated_at': datetime.datetime(2023, 11, 23, 20, 58, 41, 385232)}
+2023-11-23 20:59:14.277 [617] [usuarioFormulario.py:53] [INFO] put_usuario with nombre: string and data: {'email': 'marcelo@gmail.com', 'name': 'string', 'last_name': 'vilches', 'last_name2': 'suazo', 'fecha': '2023-11-23', 'phone': 0, 'hora': 0, 'estado_pago': 'string'}
+2023-11-23 20:59:30.589 [617] [usuarioFormulario.py:53] [INFO] put_usuario with nombre: string and data: {'email': 'marcelo@gmail.com', 'name': 'roberto', 'last_name': 'vilches', 'last_name2': 'suazo', 'fecha': '2023-11-23', 'phone': 0, 'hora': 0, 'estado_pago': 'string'}
+2023-11-23 20:59:42.408 [617] [usuarioFormulario.py:53] [INFO] put_usuario with nombre: string and data: {'email': 'marcelo@gmail.com', 'name': 'roberto', 'last_name': 'vilches', 'last_name2': 'suazo', 'fecha': '2023-11-23', 'phone': 0, 'hora': 0, 'estado_pago': 'nose'}
+2023-11-23 20:59:50.490 [617] [usuarioFormulario.py:53] [INFO] put_usuario with nombre: roberto and data: {'email': 'marcelo@gmail.com', 'name': 'roberto', 'last_name': 'vilches', 'last_name2': 'suazo', 'fecha': '2023-11-23', 'phone': 0, 'hora': 0, 'estado_pago': 'nose'}
+2023-11-23 21:01:31.792 [708] [config.py:114] [INFO] Starting app

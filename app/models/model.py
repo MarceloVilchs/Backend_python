@@ -1,5 +1,5 @@
 from bson import ObjectId
-from datetime import date
+from datetime import date, datetime
 from pydantic import BaseModel
 
 
@@ -55,9 +55,9 @@ class usuarioFormularioModel(BaseModel):
     name: str
     last_name: str
     last_name2: str
-    fecha : date
-    phone: int
-    hora : int
+    fecha : str
+    phone: str
+    hora : str
     estado_pago : str
 
     class Config:

@@ -5,6 +5,8 @@ from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 from datetime import datetime, date
 from motor.motor_asyncio import AsyncIOMotorClient
+from fastapi import HTTPException
+
 
 
 from app.auth import get_db
@@ -19,24 +21,30 @@ router = APIRouter(
 
 #Metodo GET obtencion de datos
 @router.get("/usuarioFormulario/GET")
-async def get_usuarios(
-    db: AsyncIOMotorClient = Depends(get_db(resource="resource1", method="GET"))
-):
-    """Endpoint para obtener todos los datos de usuarios de la base de datos"""
-    logging.info("Obteniendo todos los datos de usuarios formulario")
+async def get_usuario(name: str = None, db: AsyncIOMotorClient = Depends(get_db(resource="resource1", method="GET"))) -> List[usuarioFormularioModel] | usuarioFormularioModel:
+    """Endpoint para obtener un dato de la base de datos"""
+    # Buscar el dato por el nombre
+    if name is None:
+        logging.info("get all usuarios")
+        try:
+            data = await db["usuarioFormularios"].find().to_list(length=100)
+            if data is None:
+                data = []
+        except Exception as err:
+            logging.error(err)
+        return data
 
-    # Obtener todos los datos de usuarios formulario
-    data = await db["usuarioFormulario"].find().to_list(length=100)
+    logging.info(f"get usuario with name: {name}")
+    data = await db["usuarioFormularios"].find_one({"name": name})
 
     if data:
-        # Si hay datos, retornarlos
+        # Si el dato existe, retornarlo
         return data
+
     else:
-        # Si no hay datos, retornar un mensaje indicando que no se encontraron datos
-        return JSONResponse(
-            status_code=status.HTTP_404_NOT_FOUND,
-            content={"message": "No se encontraron datos de usuarios formulario"}
-        )
+        # Si el dato no existe, retornar un error
+        return JSONResponse(status_code=status.HTTP_404_NOT_FOUND, 
+                            content={"message": "Data not found"})
 
 
 
@@ -54,7 +62,7 @@ async def put_usuario(
 
     # Actualizar la cita
     data['updated_at'] = datetime.now()
-    result = await db["usuarioFormulario"].update_one(
+    result = await db["usuarioFormularios"].update_one(
         {"name": nombre},
         {"$set": data}
     )
@@ -79,7 +87,7 @@ async def delete_usuario(
     logging.info(f"delete_usuario with nombre: {nombre}")
 
     # Eliminar la cita
-    result = await db["usuarioFormulario"].delete_one({"name": nombre})
+    result = await db["usuarioFormularios"].delete_one({"name": nombre})
 
     if result.deleted_count == 1:
         # La cita fue eliminada exitosamente
@@ -94,7 +102,7 @@ async def delete_usuario(
 
 
  #Post
-@router.post("/usuarioFormulario/POST")
+@router.post("/usuarioFormularioP")
 async def post_usuario(
     usuario_data: usuarioFormularioModel,
     db: AsyncIOMotorClient = Depends(get_db(resource="resource1", method="POST"))
@@ -104,10 +112,10 @@ async def post_usuario(
     data["created_at"] = datetime.now()
     data["updated_at"] = datetime.now()
 
-    logging.info(f"post_usuario_formulario with: {data}")
+    logging.info(f"post usuarioFormularioP with: {data}")
 
     # Buscar si el dato ya existe
-    db_data = await db["usuarioFormulario"].find_one({"email": data['email']})
+    db_data = await db["usuarioFormularios"].find_one({"email": data['email']})
     if db_data:
         # Si el dato ya existe, retornar un error
         raise HTTPException(
@@ -116,7 +124,7 @@ async def post_usuario(
         )
 
     # Si el dato no existe, crearlo con sus fechas de creación
-    new_data = await db["usuarioFormulario"].insert_one(data)
+    new_data = await db["usuarioFormularios"].insert_one(data)
 
     # Retornar el id del nuevo dato
     return JSONResponse(content={"inserted_id": str(new_data.inserted_id)})
