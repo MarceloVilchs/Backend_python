@@ -55,7 +55,7 @@ class usuarioFormularioModel(BaseModel):
     name: str
     last_name: str
     last_name2: str
-    fecha : str
+    fecha : date
     phone: str
     hora : str
     estado_pago : str
@@ -65,3 +65,4 @@ class usuarioFormularioModel(BaseModel):
         json_encoders = {
             ObjectId: str
         }
+

@@ -6,11 +6,11 @@ from fastapi.responses import JSONResponse
 from datetime import datetime, date
 from motor.motor_asyncio import AsyncIOMotorClient
 from fastapi import HTTPException
-
-
+from datetime import datetime
 
 from app.auth import get_db
 from app.models.model import usuarioFormularioModel
+
 
 router = APIRouter(
     tags=["usuarioFormulario"],
@@ -109,13 +109,26 @@ async def post_usuario(
 ):
     """Endpoint para crear un dato en la base de datos"""
     data = jsonable_encoder(usuario_data)
-    data["created_at"] = datetime.now()
+    data["created_at"] = datetime.now() # Cambia a .date() para obtener solo la fecha
     data["updated_at"] = datetime.now()
 
     logging.info(f"post usuarioFormularioP with: {data}")
 
+        # Convertir la cadena de fecha al formato deseado (por ejemplo, "04-12-2023")
+    fecha_formato_deseado = datetime.strptime(data["fecha"], "%d-%m-%Y").date()
+    data["fecha"] = fecha_formato_deseado
+
+    # Verificar disponibilidad de horas
+    if not await verificarDisponibilidadFechaHora(data["fecha"], data["hora"], db):
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="Hora no disponible en la fecha especificada"
+        )
+    
+    
     # Buscar si el dato ya existe
-    db_data = await db["usuarioFormularios"].find_one({"email": data['email']})
+    db_data = await db["usuarioFormularios"].find_one({"name": data['name']})
+
     if db_data:
         # Si el dato ya existe, retornar un error
         raise HTTPException(
@@ -129,3 +142,29 @@ async def post_usuario(
     # Retornar el id del nuevo dato
     return JSONResponse(content={"inserted_id": str(new_data.inserted_id)})
 
+
+#Metodo en el cual se verifica la hora y fecha
+async def verificarDisponibilidadFechaHora(fecha: date, hora: str, db: AsyncIOMotorClient) -> bool:
+    """Verifica si la hora está disponible en la fecha especificada"""
+    # Obtén las citas existentes para la fecha y hora especificadas
+    citas_exist = await db["usuarioFormularios"].count_documents({"fecha": fecha, "hora": hora})
+    return citas_exist == 0
+
+
+async def obtener_horas_ocupadas_desde_bd(fecha: date, db: AsyncIOMotorClient) -> List[str]:
+    try:
+        # Obtén las horas ocupadas para la fecha dada desde la base de datos
+        horas_ocupadas_cursor = db["usuarioFormularios"].find(
+            {"fecha": fecha},
+            {"hora": 1, "_id": 0}
+        )
+
+        # Convierte el cursor a una lista de horas ocupadas
+        horas_ocupadas = [cita["hora"] async for cita in horas_ocupadas_cursor]
+
+        return horas_ocupadas
+
+    except Exception as e:
+        # Maneja cualquier excepción específica que pueda ocurrir durante la consulta
+        logging.error(f"Error al obtener horas ocupadas: {e}")
+        return []

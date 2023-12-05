@@ -1,0 +1,18 @@
+2023-12-02 16:16:51,394 <8> 172.18.0.1:49778 GET / HTTP/1.1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0 404 0.005685s
+2023-12-02 16:17:02,011 <8> 172.18.0.1:51472 GET /docs HTTP/1.1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0 200 0.003196s
+2023-12-02 16:17:02,346 <8> 172.18.0.1:51472 GET /openapi.json HTTP/1.1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0 200 0.061271s
+2023-12-02 16:17:46,122 <8> 127.0.0.1:40202 GET /health HTTP/1.1 curl/7.88.1 200 0.002656s
+2023-12-02 16:18:24,838 <8> 172.18.0.1:46638 POST /usuarioFormulario/usuarioFormularioP HTTP/1.1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0 200 0.189843s
+2023-12-02 16:18:46,507 <8> 127.0.0.1:39192 GET /health HTTP/1.1 curl/7.88.1 200 0.003932s
+2023-12-02 16:19:46,808 <8> 127.0.0.1:37100 GET /health HTTP/1.1 curl/7.88.1 200 0.002276s
+2023-12-02 16:20:47,015 <8> 127.0.0.1:44626 GET /health HTTP/1.1 curl/7.88.1 200 0.004741s
+2023-12-02 16:21:47,165 <8> 127.0.0.1:53032 GET /health HTTP/1.1 curl/7.88.1 200 0.001819s
+2023-12-02 16:21:54,772 <8> 172.18.0.1:53042 POST /createAccount/createAccount1 HTTP/1.1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0 200 0.068028s
+2023-12-02 16:22:47,276 <8> 127.0.0.1:50544 GET /health HTTP/1.1 curl/7.88.1 200 0.001905s
+2023-12-02 16:23:47,414 <8> 127.0.0.1:44286 GET /health HTTP/1.1 curl/7.88.1 200 0.002824s
+2023-12-02 16:24:47,567 <8> 127.0.0.1:46064 GET /health HTTP/1.1 curl/7.88.1 200 0.002738s
+2023-12-02 16:25:36,975 <8> 172.18.0.1:51878 POST /usuarioFormulario/usuarioFormularioP HTTP/1.1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0 200 0.023201s
+2023-12-02 16:25:47,764 <8> 127.0.0.1:43288 GET /health HTTP/1.1 curl/7.88.1 200 0.002827s
+2023-12-02 16:26:48,825 <8> 127.0.0.1:35442 GET /health HTTP/1.1 curl/7.88.1 200 0.014876s
+2023-12-02 16:27:49,094 <8> 127.0.0.1:36642 GET /health HTTP/1.1 curl/7.88.1 200 0.003276s
+2023-12-02 16:28:49,807 <8> 127.0.0.1:56900 GET /health HTTP/1.1 curl/7.88.1 200 0.003588s
