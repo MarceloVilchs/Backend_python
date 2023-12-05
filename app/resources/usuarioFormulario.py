@@ -38,14 +38,16 @@ async def get_usuario(name: str = None, db: AsyncIOMotorClient = Depends(get_db(
     data = await db["usuarioFormularios"].find_one({"name": name})
 
     if data:
+        # Formatear la fecha al formato deseado ("DD-MM-YYYY")
+        formatted_date = datetime.strftime(data["fecha"], "%d-%m-%Y")
+        data["fecha"] = formatted_date
+
         # Si el dato existe, retornarlo
         return data
 
     else:
         # Si el dato no existe, retornar un error
-        return JSONResponse(status_code=status.HTTP_404_NOT_FOUND, 
-                            content={"message": "Data not found"})
-
+        return JSONResponse(status_code=status.HTTP_404_NOT_FOUND, content={"message": "Data not found"})
 
 
 #Editar Usuario
@@ -101,7 +103,7 @@ async def delete_usuario(
 
 
 
- #Post
+# Post
 @router.post("/usuarioFormularioP")
 async def post_usuario(
     usuario_data: usuarioFormularioModel,
@@ -109,14 +111,13 @@ async def post_usuario(
 ):
     """Endpoint para crear un dato en la base de datos"""
     data = jsonable_encoder(usuario_data)
-    data["created_at"] = datetime.now() # Cambia a .date() para obtener solo la fecha
+    data["created_at"] = datetime.now()
     data["updated_at"] = datetime.now()
 
     logging.info(f"post usuarioFormularioP with: {data}")
 
-        # Convertir la cadena de fecha al formato deseado (por ejemplo, "04-12-2023")
-    fecha_formato_deseado = datetime.strptime(data["fecha"], "%d-%m-%Y").date()
-    data["fecha"] = fecha_formato_deseado
+    # No es necesario convertir la cadena de fecha al formato deseado antes de insertarla
+    # Guardará la fecha en formato YYYY-MM-DD en la base de datos
 
     # Verificar disponibilidad de horas
     if not await verificarDisponibilidadFechaHora(data["fecha"], data["hora"], db):
@@ -124,8 +125,7 @@ async def post_usuario(
             status_code=status.HTTP_409_CONFLICT,
             detail="Hora no disponible en la fecha especificada"
         )
-    
-    
+
     # Buscar si el dato ya existe
     db_data = await db["usuarioFormularios"].find_one({"name": data['name']})
 
@@ -141,6 +141,7 @@ async def post_usuario(
 
     # Retornar el id del nuevo dato
     return JSONResponse(content={"inserted_id": str(new_data.inserted_id)})
+
 
 
 #Metodo en el cual se verifica la hora y fecha
