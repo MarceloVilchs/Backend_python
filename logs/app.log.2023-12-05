@@ -1,0 +1,104 @@
+2023-12-05 00:04:57.020 [1062] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'lsadlsa@gmail.com', 'name': 'ksadka', 'last_name': 'dksakd', 'last_name2': 'dksadk', 'fecha': '2023-12-09', 'phone': 'dksakd', 'hora': '13:30', 'estado_pago': 'erer', 'created_at': datetime.datetime(2023, 12, 5, 0, 4, 57, 19316), 'updated_at': datetime.datetime(2023, 12, 5, 0, 4, 57, 19329)}
+2023-12-05 00:05:24.494 [1062] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'lsadlsa@gmail.com', 'name': 'ksadka', 'last_name': 'dksakd', 'last_name2': 'dksadk', 'fecha': '2023-12-09', 'phone': 'dksakd', 'hora': '13:30', 'estado_pago': 'erer', 'created_at': datetime.datetime(2023, 12, 5, 0, 5, 24, 494442), 'updated_at': datetime.datetime(2023, 12, 5, 0, 5, 24, 494449)}
+2023-12-05 00:10:40.410 [1238] [config.py:114] [INFO] Starting app
+2023-12-05 00:17:17.342 [1238] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'kasdasls@gmail.com', 'name': 'asdj', 'last_name': 'dask', 'last_name2': 'dasd', 'fecha': '2023-12-15', 'phone': 'aksdk', 'hora': '11:30', 'estado_pago': 'asdasd', 'created_at': datetime.datetime(2023, 12, 5, 0, 17, 17, 341397), 'updated_at': datetime.datetime(2023, 12, 5, 0, 17, 17, 341405)}
+2023-12-05 00:48:20.682 [1238] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'jasdja@gmail.com', 'name': 'askdkas', 'last_name': 'dksakd', 'last_name2': 'dkakd', 'fecha': '08/12/2023', 'phone': 'dkakd', 'hora': '11:30', 'estado_pago': 'kasdkas', 'created_at': datetime.datetime(2023, 12, 5, 0, 48, 20, 682124), 'updated_at': datetime.datetime(2023, 12, 5, 0, 48, 20, 682131)}
+2023-12-05 00:49:39.219 [1238] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'ksad@gmail.com', 'name': 'kasdk', 'last_name': 'kdsakd', 'last_name2': 'dkakd', 'fecha': '06/12/2023', 'phone': 'dkadk', 'hora': '12:00', 'estado_pago': 'ajsdmsa', 'created_at': datetime.datetime(2023, 12, 5, 0, 49, 39, 219658), 'updated_at': datetime.datetime(2023, 12, 5, 0, 49, 39, 219666)}
+2023-12-05 01:44:43.822 [1238] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'lalsd@gmail.com', 'name': 'jasdj', 'last_name': 'djsajd', 'last_name2': 'djasjd', 'fecha': '14/12/2023', 'phone': 'sdjadj', 'hora': '11:30', 'estado_pago': 'aksdkas', 'created_at': datetime.datetime(2023, 12, 5, 1, 44, 43, 821835), 'updated_at': datetime.datetime(2023, 12, 5, 1, 44, 43, 821852)}
+2023-12-05 02:19:25.395 [2155] [config.py:114] [INFO] Starting app
+2023-12-05 02:25:26.862 [2155] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'kasdas@gmail.com', 'name': 'aksdk', 'last_name': 'dsakdk', 'last_name2': 'dksakd', 'fecha': '2023-12-14', 'phone': 'skdakd', 'hora': '11:00', 'estado_pago': 'asmdkas', 'created_at': datetime.datetime(2023, 12, 5, 2, 25, 26, 861345), 'updated_at': datetime.datetime(2023, 12, 5, 2, 25, 26, 861358)}
+2023-12-05 02:47:21.418 [2355] [config.py:114] [INFO] Starting app
+2023-12-05 02:47:59.024 [2355] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'kdkasd@gmail.com', 'name': 'ajsdjas', 'last_name': 'djsajd', 'last_name2': 'jdsajdaj', 'fecha': '2023-12-15', 'phone': 'jdsajdjas', 'hora': '12:00', 'estado_pago': 'asdsad', 'created_at': datetime.datetime(2023, 12, 5, 2, 47, 59, 24008), 'updated_at': datetime.datetime(2023, 12, 5, 2, 47, 59, 24017)}
+2023-12-05 02:48:25.706 [2355] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'keqwke@gmail.com', 'name': 'asjdj', 'last_name': 'djsajd', 'last_name2': 'jdsajd', 'fecha': '2023-12-15', 'phone': 'jdsjadj', 'hora': '11:00', 'estado_pago': 'asdasd', 'created_at': datetime.datetime(2023, 12, 5, 2, 48, 25, 706414), 'updated_at': datetime.datetime(2023, 12, 5, 2, 48, 25, 706427)}
+2023-12-05 02:49:43.117 [2355] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'asjdjas@gmail.com', 'name': 'jasdja', 'last_name': 'jdsajd', 'last_name2': 'jdjadj', 'fecha': '2023-12-15', 'phone': 'djsajd', 'hora': '11:00', 'estado_pago': 'asdsa', 'created_at': datetime.datetime(2023, 12, 5, 2, 49, 43, 117458), 'updated_at': datetime.datetime(2023, 12, 5, 2, 49, 43, 117468)}
+2023-12-05 02:49:46.405 [2355] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'asjdjas@gmail.com', 'name': 'jasdja', 'last_name': 'jdsajd', 'last_name2': 'jdjadj', 'fecha': '2023-12-15', 'phone': 'djsajd', 'hora': '11:00', 'estado_pago': 'asdsa', 'created_at': datetime.datetime(2023, 12, 5, 2, 49, 46, 405236), 'updated_at': datetime.datetime(2023, 12, 5, 2, 49, 46, 405244)}
+2023-12-05 02:51:41.970 [2355] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'asjdjas@gmail.com', 'name': 'jasdja', 'last_name': 'jdsajd', 'last_name2': 'jdjadj', 'fecha': '2023-12-15', 'phone': 'djsajd', 'hora': '11:00', 'estado_pago': 'asdsa', 'created_at': datetime.datetime(2023, 12, 5, 2, 51, 41, 969532), 'updated_at': datetime.datetime(2023, 12, 5, 2, 51, 41, 969540)}
+2023-12-05 02:52:12.588 [2355] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'kasdka@gmail.com', 'name': 'jasdj', 'last_name': 'djasjds', 'last_name2': 'djajd', 'fecha': '2023-12-15', 'phone': 'jdajd', 'hora': '11:00', 'estado_pago': 'asdas', 'created_at': datetime.datetime(2023, 12, 5, 2, 52, 12, 588313), 'updated_at': datetime.datetime(2023, 12, 5, 2, 52, 12, 588316)}
+2023-12-05 02:55:19.419 [2355] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'sdalsdas@gmail.com', 'name': 'aksdk', 'last_name': 'dksakd', 'last_name2': 'kdsakd', 'fecha': '2023-12-13', 'phone': 'dksak', 'hora': '10:00', 'estado_pago': 'asdasd', 'created_at': datetime.datetime(2023, 12, 5, 2, 55, 19, 418177), 'updated_at': datetime.datetime(2023, 12, 5, 2, 55, 19, 418208)}
+2023-12-05 02:55:56.169 [2355] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'kasdka@gmail.com', 'name': 'kasdk', 'last_name': 'dksakd', 'last_name2': 'kdsakd', 'fecha': '2023-12-20', 'phone': 'kdka', 'hora': '13:30', 'estado_pago': 'asdsad', 'created_at': datetime.datetime(2023, 12, 5, 2, 55, 56, 168939), 'updated_at': datetime.datetime(2023, 12, 5, 2, 55, 56, 168947)}
+2023-12-05 02:56:44.502 [2355] [usuarioFormulario.py:115] [INFO] post usuarioFormularioP with: {'email': 'pqwepqw@gmail.com', 'name': 'asjdjsa', 'last_name': 'dksakd', 'last_name2': 'skdakd', 'fecha': '2023-12-08', 'phone': 'kdak', 'hora': '11:30', 'estado_pago': 'asdad', 'created_at': datetime.datetime(2023, 12, 5, 2, 56, 44, 502233), 'updated_at': datetime.datetime(2023, 12, 5, 2, 56, 44, 502241)}
+2023-12-05 02:59:56.470 [2456] [config.py:114] [INFO] Starting app
+2023-12-05 03:01:59.059 [2471] [config.py:114] [INFO] Starting app
+2023-12-05 03:20:44.727 [2604] [config.py:114] [INFO] Starting app
+2023-12-05 03:20:56.490 [2604] [usuarioFormulario.py:117] [INFO] post usuarioFormularioP with: {'email': 'asdlas@gmail.com', 'name': 'asdasd', 'last_name': 'asdasd', 'last_name2': 'asdasd', 'fecha': '2023-12-20', 'phone': 'asdasd', 'hora': '12:00', 'estado_pago': 'asdasd', 'created_at': datetime.datetime(2023, 12, 5, 3, 20, 56, 490388), 'updated_at': datetime.datetime(2023, 12, 5, 3, 20, 56, 490395)}
+2023-12-05 03:21:24.849 [2604] [usuarioFormulario.py:117] [INFO] post usuarioFormularioP with: {'email': 'asjdasj@gmail.com', 'name': 'asjdka', 'last_name': 'dosaod', 'last_name2': 'dsadiad', 'fecha': '2023-12-12', 'phone': 'odsaod', 'hora': '10:00', 'estado_pago': 'asdasd', 'created_at': datetime.datetime(2023, 12, 5, 3, 21, 24, 849171), 'updated_at': datetime.datetime(2023, 12, 5, 3, 21, 24, 849181)}
+2023-12-05 03:22:03.640 [2625] [config.py:114] [INFO] Starting app
+2023-12-05 03:23:54.756 [2625] [usuarioFormulario.py:117] [INFO] post usuarioFormularioP with: {'email': 'apsdas@gmail.com', 'name': 'asdk', 'last_name': 'dsaod', 'last_name2': 'dosado', 'fecha': '2023-12-13', 'phone': 'odsad', 'hora': '10:30', 'estado_pago': 'asdasd', 'created_at': datetime.datetime(2023, 12, 5, 3, 23, 54, 756408), 'updated_at': datetime.datetime(2023, 12, 5, 3, 23, 54, 756434)}
+2023-12-05 03:27:36.349 [2625] [usuarioFormulario.py:117] [INFO] post usuarioFormularioP with: {'email': 'marcelovilches@gmail.com', 'name': 'Marcelo', 'last_name': 'Vilches', 'last_name2': 'Suazo', 'fecha': '2023-12-13', 'phone': '950817425', 'hora': '10:00', 'estado_pago': 'xd', 'created_at': datetime.datetime(2023, 12, 5, 3, 27, 36, 349118), 'updated_at': datetime.datetime(2023, 12, 5, 3, 27, 36, 349128)}
+2023-12-05 18:45:16.080 [8] [config.py:114] [INFO] Starting app
+2023-12-05 18:49:29.668 [8] [usuarioFormulario.py:117] [INFO] post usuarioFormularioP with: {'email': 'kwsdfsa@gmail.com', 'name': 'kasdk', 'last_name': 'kdsak', 'last_name2': 'dkakd', 'fecha': '2023-12-20', 'phone': 'kdka', 'hora': '12:00', 'estado_pago': 'sdasdas', 'created_at': datetime.datetime(2023, 12, 5, 18, 49, 29, 668020), 'updated_at': datetime.datetime(2023, 12, 5, 18, 49, 29, 668034)}
+2023-12-05 19:12:16.895 [8] [usuarioFormulario.py:117] [INFO] post usuarioFormularioP with: {'email': 'asdkaskd@gmail.com', 'name': 'kasdk', 'last_name': 'dkaskd', 'last_name2': 'dksakd', 'fecha': '2023-12-09', 'phone': 'skdakd', 'hora': '11:30', 'estado_pago': 'asdas', 'created_at': datetime.datetime(2023, 12, 5, 19, 12, 16, 893653), 'updated_at': datetime.datetime(2023, 12, 5, 19, 12, 16, 893676)}
+2023-12-05 19:12:40.188 [8] [usuarioFormulario.py:117] [INFO] post usuarioFormularioP with: {'email': 'aksd123las@gmail.com', 'name': 'asod123', 'last_name': 'oasd213', 'last_name2': 'dpasdo123', 'fecha': '2023-12-09', 'phone': 'daspd123', 'hora': '10:00', 'estado_pago': 'qwd123', 'created_at': datetime.datetime(2023, 12, 5, 19, 12, 40, 188496), 'updated_at': datetime.datetime(2023, 12, 5, 19, 12, 40, 188513)}
+2023-12-05 19:20:18.374 [8] [usuarioFormulario.py:117] [INFO] post usuarioFormularioP with: {'email': 'aksda@gmail.com', 'name': 'aksdk', 'last_name': 'dsajd', 'last_name2': 'djad', 'fecha': '2023-12-15', 'phone': 'djajds', 'hora': '11:30', 'estado_pago': 'dsjadj', 'created_at': datetime.datetime(2023, 12, 5, 19, 20, 18, 370005), 'updated_at': datetime.datetime(2023, 12, 5, 19, 20, 18, 370033)}
+2023-12-05 19:45:00.226 [438] [config.py:114] [INFO] Starting app
+2023-12-05 19:45:13.857 [439] [config.py:114] [INFO] Starting app
+2023-12-05 19:45:35.352 [439] [usuarioFormulario.py:28] [INFO] get all usuarios
+2023-12-05 20:02:47.717 [439] [usuarioFormulario.py:28] [INFO] get all usuarios
+2023-12-05 20:03:34.391 [439] [usuarioFormulario.py:117] [INFO] post usuarioFormularioP with: {'email': 'aksdka@gmail.com', 'name': '291391', 'last_name': '931923', 'last_name2': '39123', 'fecha': '2023-12-20', 'phone': '931939', 'hora': '12:00', 'estado_pago': 'por pagar', 'created_at': datetime.datetime(2023, 12, 5, 20, 3, 34, 389823), 'updated_at': datetime.datetime(2023, 12, 5, 20, 3, 34, 389830)}
+2023-12-05 20:03:36.694 [439] [usuarioFormulario.py:28] [INFO] get all usuarios
+2023-12-05 20:03:49.946 [439] [usuarioFormulario.py:28] [INFO] get all usuarios
+2023-12-05 20:04:30.509 [439] [usuarioFormulario.py:28] [INFO] get all usuarios
+2023-12-05 20:04:54.725 [439] [usuarioFormulario.py:117] [INFO] post usuarioFormularioP with: {'email': 'holas@gmail.com', 'name': 'jhgh', 'last_name': 'sfdf', 'last_name2': 'dgfd', 'fecha': '2023-12-19', 'phone': 'sfdse', 'hora': '12:00', 'estado_pago': 'lkjl', 'created_at': datetime.datetime(2023, 12, 5, 20, 4, 54, 725140), 'updated_at': datetime.datetime(2023, 12, 5, 20, 4, 54, 725152)}
+2023-12-05 20:04:56.282 [439] [usuarioFormulario.py:28] [INFO] get all usuarios
+2023-12-05 20:22:08.612 [439] [usuarioFormulario.py:28] [INFO] get all usuarios
+2023-12-05 20:23:07.676 [718] [config.py:114] [INFO] Starting app
+2023-12-05 20:23:12.646 [718] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 20:23:25.778 [718] [usuarioFormulario.py:91] [INFO] delete_usuario with cita_id: undefined
+2023-12-05 20:24:26.908 [718] [usuarioFormulario.py:91] [INFO] delete_usuario with cita_id: 656f77f255b8af8263f66c6f
+2023-12-05 20:24:41.512 [718] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 20:24:49.718 [718] [usuarioFormulario.py:91] [INFO] delete_usuario with cita_id: undefined
+2023-12-05 20:30:17.475 [718] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 20:30:22.644 [718] [usuarioFormulario.py:91] [INFO] delete_usuario with cita_id: undefined
+2023-12-05 20:54:10.834 [718] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 21:38:05.244 [718] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 21:41:36.064 [718] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 21:49:27.367 [718] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 21:57:00.601 [718] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 21:57:02.836 [718] [usuarioFormulario.py:91] [INFO] delete_usuario with cita_id: undefined
+2023-12-05 21:57:34.263 [718] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 21:59:04.537 [718] [usuarioFormulario.py:123] [INFO] post usuarioFormularioP with: {'email': 'marcelo@gmail.com', 'name': 'marcelo', 'last_name': 'vilches', 'last_name2': 'suazo', 'fecha': '2023-12-28', 'phone': '9512832813', 'hora': '14:00', 'estado_pago': 'qwewqe', 'created_at': datetime.datetime(2023, 12, 5, 21, 59, 4, 536344), 'updated_at': datetime.datetime(2023, 12, 5, 21, 59, 4, 536436)}
+2023-12-05 21:59:08.004 [718] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 21:59:25.679 [718] [usuarioFormulario.py:91] [INFO] delete_usuario with cita_id: undefined
+2023-12-05 21:59:27.979 [718] [usuarioFormulario.py:91] [INFO] delete_usuario with cita_id: undefined
+2023-12-05 21:59:29.313 [718] [usuarioFormulario.py:91] [INFO] delete_usuario with cita_id: undefined
+2023-12-05 21:59:29.833 [718] [usuarioFormulario.py:91] [INFO] delete_usuario with cita_id: undefined
+2023-12-05 21:59:30.188 [718] [usuarioFormulario.py:91] [INFO] delete_usuario with cita_id: undefined
+2023-12-05 21:59:30.466 [718] [usuarioFormulario.py:91] [INFO] delete_usuario with cita_id: undefined
+2023-12-05 21:59:30.735 [718] [usuarioFormulario.py:91] [INFO] delete_usuario with cita_id: undefined
+2023-12-05 21:59:30.983 [718] [usuarioFormulario.py:91] [INFO] delete_usuario with cita_id: undefined
+2023-12-05 22:02:13.506 [718] [usuarioFormulario.py:91] [INFO] delete_usuario with cita_id: undefined
+2023-12-05 22:04:49.075 [718] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 22:12:30.048 [1413] [config.py:114] [INFO] Starting app
+2023-12-05 22:15:28.034 [1413] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 22:15:34.873 [1413] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 22:16:13.925 [1441] [config.py:114] [INFO] Starting app
+2023-12-05 22:16:14.928 [1441] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 22:16:32.653 [1454] [config.py:114] [INFO] Starting app
+2023-12-05 22:16:38.435 [1454] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 22:16:47.424 [1460] [config.py:114] [INFO] Starting app
+2023-12-05 22:16:56.109 [1460] [usuarioFormulario.py:29] [INFO] get all usuarios
+2023-12-05 22:17:11.524 [1466] [config.py:114] [INFO] Starting app
+2023-12-05 22:21:05.103 [1466] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 22:22:38.285 [1515] [config.py:114] [INFO] Starting app
+2023-12-05 22:24:34.345 [1530] [config.py:114] [INFO] Starting app
+2023-12-05 22:27:26.357 [1530] [usuarioFormulario.py:132] [INFO] post usuarioFormularioP with: {'email': 'sakldka@gmail.com', 'name': 'asdaks', 'last_name': 'dkaskd', 'last_name2': 'odsaodos', 'fecha': '2023-12-18', 'phone': 'doada', 'hora': '12:30', 'estado_pago': 'egfg', 'created_at': datetime.datetime(2023, 12, 5, 22, 27, 26, 356657), 'updated_at': datetime.datetime(2023, 12, 5, 22, 27, 26, 356668)}
+2023-12-05 22:27:29.234 [1530] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 22:28:23.852 [1530] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 22:28:44.319 [1530] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 22:35:08.024 [1530] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 22:35:41.997 [1530] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 22:45:46.682 [1530] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 22:52:09.813 [1530] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 22:52:59.991 [1530] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 22:55:29.180 [1530] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 23:14:18.954 [1885] [config.py:114] [INFO] Starting app
+2023-12-05 23:14:42.651 [1885] [usuarioFormulario.py:132] [INFO] post usuarioFormularioP with: {'email': 'string', 'name': 'string', 'last_name': 'string', 'last_name2': 'string', 'fecha': '2023-12-05', 'phone': 'string', 'hora': 'string', 'estado_pago': 'string', 'created_at': datetime.datetime(2023, 12, 5, 23, 14, 42, 650878), 'updated_at': datetime.datetime(2023, 12, 5, 23, 14, 42, 650885)}
+2023-12-05 23:14:52.011 [1885] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 23:15:06.618 [1885] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 23:16:31.490 [1885] [usuarioFormulario.py:132] [INFO] post usuarioFormularioP with: {'email': 'alsdkas@gmail.com', 'name': 'aksdk', 'last_name': 'dkask', 'last_name2': 'dksakd', 'fecha': '2023-12-19', 'phone': 'kdsakd', 'hora': '12:30', 'estado_pago': 'asdasd', 'created_at': datetime.datetime(2023, 12, 5, 23, 16, 31, 489293), 'updated_at': datetime.datetime(2023, 12, 5, 23, 16, 31, 489301)}
+2023-12-05 23:16:32.941 [1885] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 23:19:54.171 [1885] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 23:33:04.758 [1885] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 23:33:08.859 [1885] [usuarioFormulario.py:30] [INFO] get all usuarios
+2023-12-05 23:33:44.341 [1885] [usuarioFormulario.py:132] [INFO] post usuarioFormularioP with: {'email': 'marcelo@gmail.com', 'name': 'askdk', 'last_name': 'dkadk', 'last_name2': 'sdkakds', 'fecha': '2023-12-19', 'phone': 'dkakd', 'hora': '11:30', 'estado_pago': 'asdasd', 'created_at': datetime.datetime(2023, 12, 5, 23, 33, 44, 341199), 'updated_at': datetime.datetime(2023, 12, 5, 23, 33, 44, 341209)}
+2023-12-05 23:33:46.189 [1885] [usuarioFormulario.py:30] [INFO] get all usuarios

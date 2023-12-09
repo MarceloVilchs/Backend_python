@@ -1,6 +1,7 @@
 from bson import ObjectId
 from datetime import date, datetime
 from pydantic import BaseModel
+from uuid import UUID
 
 
 class PyObjectId(ObjectId):

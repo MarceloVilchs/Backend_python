@@ -7,6 +7,8 @@ from datetime import datetime, date
 from motor.motor_asyncio import AsyncIOMotorClient
 from fastapi import HTTPException
 from datetime import datetime
+from bson import ObjectId
+
 
 from app.auth import get_db
 from app.models.model import usuarioFormularioModel
@@ -19,7 +21,7 @@ router = APIRouter(
 
 
 
-#Metodo GET obtencion de datos
+# Método GET obtención de datos
 @router.get("/usuarioFormulario/GET")
 async def get_usuario(name: str = None, db: AsyncIOMotorClient = Depends(get_db(resource="resource1", method="GET"))) -> List[usuarioFormularioModel] | usuarioFormularioModel:
     """Endpoint para obtener un dato de la base de datos"""
@@ -27,7 +29,10 @@ async def get_usuario(name: str = None, db: AsyncIOMotorClient = Depends(get_db(
     if name is None:
         logging.info("get all usuarios")
         try:
-            data = await db["usuarioFormularios"].find().to_list(length=100)
+            # Incluye el campo _id en la proyección para obtenerlo en el resultado
+            projection = {"_id": 1, "email": 1, "name": 1, "last_name": 1, "last_name2": 1, "fecha": 1, "phone": 1, "hora": 1, "estado_pago": 1}  # Ajusta los campos según tu esquema
+            data = await db["usuarioFormularios"].find({}, projection).to_list(length=100)
+
             if data is None:
                 data = []
         except Exception as err:
@@ -37,19 +42,8 @@ async def get_usuario(name: str = None, db: AsyncIOMotorClient = Depends(get_db(
     logging.info(f"get usuario with name: {name}")
     data = await db["usuarioFormularios"].find_one({"name": name})
 
-    if data:
-        # Formatear la fecha al formato deseado ("DD-MM-YYYY")
-        formatted_date = datetime.strftime(data["fecha"], "%d-%m-%Y")
-        data["fecha"] = formatted_date
 
-        # Si el dato existe, retornarlo
-        return data
-
-    else:
-        # Si el dato no existe, retornar un error
-        return JSONResponse(status_code=status.HTTP_404_NOT_FOUND, content={"message": "Data not found"})
-
-
+    
 #Editar Usuario
 @router.put("/usuarioFormulario/PUT")
 async def put_usuario(
@@ -80,26 +74,28 @@ async def put_usuario(
         )
 
 #Metodo Delete usuario
-@router.delete("/usuarioFormulario/DELETE")
+@router.delete("/usuarioFormulario")
 async def delete_usuario(
-    nombre: str,
+    name: str,
     db: AsyncIOMotorClient = Depends(get_db(resource="resource1", method="DELETE"))
 ):
-    """Endpoint para eliminar una cita de la base de datos"""
-    logging.info(f"delete_usuario with nombre: {nombre}")
+    """Endpoint para eliminar una cita de la base de datos por nombre"""
+    logging.info(f"delete_usuario with name: {name}")
 
     # Eliminar la cita
-    result = await db["usuarioFormularios"].delete_one({"name": nombre})
+    result = await db["usuarioFormularios"].delete_one({"name": name})
 
-    if result.deleted_count == 1:
+    if result.deleted_count > 0:
         # La cita fue eliminada exitosamente
-        return JSONResponse(content={"message": "Cita eliminada correctamente"})
+        return {"message": "Cita eliminada correctamente", "deleted_count": result.deleted_count}
     else:
         # La cita no fue encontrada
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Cita no encontrada"
         )
+
+
 
 
 
