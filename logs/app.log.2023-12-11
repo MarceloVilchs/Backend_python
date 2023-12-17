@@ -1,0 +1,37 @@
+2023-12-11 15:14:59.020 [8] [config.py:114] [INFO] Starting app
+2023-12-11 15:27:53.978 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 15:29:31.517 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 15:30:13.546 [8] [usuarioFormulario.py:123] [INFO] post usuarioFormularioP with: {'email': 'akdss@gmail.com', 'name': 'kasdk', 'last_name': 'dksak', 'last_name2': 'dksadk', 'fecha': '2023-12-13', 'phone': 'dksak', 'hora': '12:00', 'estado_pago': 'Por Pagar', 'created_at': datetime.datetime(2023, 12, 11, 15, 30, 13, 546490), 'updated_at': datetime.datetime(2023, 12, 11, 15, 30, 13, 546509)}
+2023-12-11 15:30:15.150 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 15:30:22.653 [8] [usuarioFormulario.py:93] [INFO] delete_usuario with name: kasdk
+2023-12-11 15:30:22.751 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 15:37:57.202 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 17:11:00.700 [8] [config.py:114] [INFO] Starting app
+2023-12-11 17:36:07.457 [8] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'matias@gmail.com', 'pass_': '1234', 'pass_confirm': '1234', 'name': 'Matias', 'last_name': 'Martinez', 'last_name2': 'Martinez', 'run': '204448604', 'phone': '931972810', 'phone2': '', 'created_at': datetime.datetime(2023, 12, 11, 17, 36, 7, 456686), 'updated_at': datetime.datetime(2023, 12, 11, 17, 36, 7, 456692)}
+2023-12-11 17:37:07.814 [8] [usuarioFormulario.py:123] [INFO] post usuarioFormularioP with: {'email': 'Matias@gmail.com', 'name': 'Matias', 'last_name': 'Martinez', 'last_name2': 'Martinez', 'fecha': '2023-12-11', 'phone': '931972810', 'hora': '13:30', 'estado_pago': 'Por Pagar', 'created_at': datetime.datetime(2023, 12, 11, 17, 37, 7, 814436), 'updated_at': datetime.datetime(2023, 12, 11, 17, 37, 7, 814442)}
+2023-12-11 17:37:20.002 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 17:38:12.947 [8] [usuarioFormulario.py:93] [INFO] delete_usuario with name: Matias
+2023-12-11 17:38:13.023 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 17:45:35.662 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 17:46:10.949 [8] [usuarioFormulario.py:123] [INFO] post usuarioFormularioP with: {'email': 'aksd@gmail.com', 'name': 'jasdj', 'last_name': 'dsaj', 'last_name2': 'dksad', 'fecha': '2023-12-20', 'phone': 'djsa', 'hora': '13:00', 'estado_pago': 'Por Pagar', 'created_at': datetime.datetime(2023, 12, 11, 17, 46, 10, 949251), 'updated_at': datetime.datetime(2023, 12, 11, 17, 46, 10, 949257)}
+2023-12-11 17:46:12.055 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 18:15:43.591 [8] [config.py:114] [INFO] Starting app
+2023-12-11 18:31:22.853 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 18:31:59.392 [8] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'matias@gmail.com', 'pass_': '1234', 'pass_confirm': '1234', 'name': 'Matías', 'last_name': 'Martínez', 'last_name2': 'Martínez', 'run': '204448604', 'phone': '931972810', 'phone2': '', 'created_at': datetime.datetime(2023, 12, 11, 18, 31, 59, 392585), 'updated_at': datetime.datetime(2023, 12, 11, 18, 31, 59, 392591)}
+2023-12-11 18:33:02.897 [8] [usuarioFormulario.py:123] [INFO] post usuarioFormularioP with: {'email': 'matias@gmail.com', 'name': 'Matías', 'last_name': 'Martínez', 'last_name2': 'Martínez', 'fecha': '2023-12-11', 'phone': '931972810', 'hora': '14:30', 'estado_pago': 'Por Pagar', 'created_at': datetime.datetime(2023, 12, 11, 18, 33, 2, 897616), 'updated_at': datetime.datetime(2023, 12, 11, 18, 33, 2, 897621)}
+2023-12-11 18:33:18.552 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 18:34:17.271 [8] [usuarioFormulario.py:93] [INFO] delete_usuario with name: Matías
+2023-12-11 18:34:17.331 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 19:19:12.917 [8] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'matias@gmail.com', 'pass_': '1234', 'pass_confirm': '1234', 'name': 'Matías', 'last_name': 'Martínez', 'last_name2': 'Martínez', 'run': '204448604', 'phone': '931972810', 'phone2': '', 'created_at': datetime.datetime(2023, 12, 11, 19, 19, 12, 912695), 'updated_at': datetime.datetime(2023, 12, 11, 19, 19, 12, 912707)}
+2023-12-11 19:20:06.530 [8] [usuarioFormulario.py:123] [INFO] post usuarioFormularioP with: {'email': 'matias@gmail.com', 'name': 'Matias', 'last_name': 'Martinez', 'last_name2': 'Martinez', 'fecha': '2023-12-11', 'phone': 'Martinez', 'hora': '14:30', 'estado_pago': 'Por Pagar', 'created_at': datetime.datetime(2023, 12, 11, 19, 20, 6, 529982), 'updated_at': datetime.datetime(2023, 12, 11, 19, 20, 6, 529993)}
+2023-12-11 19:20:17.052 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 19:21:04.708 [8] [usuarioFormulario.py:93] [INFO] delete_usuario with name: Matias
+2023-12-11 19:21:04.773 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 20:00:41.870 [8] [config.py:114] [INFO] Starting app
+2023-12-11 20:00:54.624 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 20:14:09.465 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 20:46:35.374 [8] [createAccount.py:27] [INFO] post createAccount1 with: {'email': 'matias@gmail.com', 'pass_': '1234', 'pass_confirm': '1234', 'name': 'Matias', 'last_name': 'Martinez', 'last_name2': 'Martinez', 'run': '204448604', 'phone': '931972810', 'phone2': '', 'created_at': datetime.datetime(2023, 12, 11, 20, 46, 35, 374082), 'updated_at': datetime.datetime(2023, 12, 11, 20, 46, 35, 374094)}
+2023-12-11 20:47:35.396 [8] [usuarioFormulario.py:123] [INFO] post usuarioFormularioP with: {'email': 'matias@gmail.com', 'name': 'Matias', 'last_name': 'Martinez', 'last_name2': 'Martinez', 'fecha': '2023-12-11', 'phone': '931972810', 'hora': '14:30', 'estado_pago': 'Por Pagar', 'created_at': datetime.datetime(2023, 12, 11, 20, 47, 35, 395381), 'updated_at': datetime.datetime(2023, 12, 11, 20, 47, 35, 395395)}
+2023-12-11 20:47:46.192 [8] [usuarioFormulario.py:31] [INFO] get all usuarios
+2023-12-11 20:48:51.028 [8] [usuarioFormulario.py:93] [INFO] delete_usuario with name: Matias
+2023-12-11 20:48:51.099 [8] [usuarioFormulario.py:31] [INFO] get all usuarios

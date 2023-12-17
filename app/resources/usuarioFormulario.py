@@ -1,6 +1,6 @@
 import logging
 from typing import List
-from fastapi import APIRouter, status, Depends
+from fastapi import APIRouter, status, Depends, Body
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 from datetime import datetime, date
@@ -8,6 +8,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from fastapi import HTTPException
 from datetime import datetime
 from bson import ObjectId
+
 
 
 from app.auth import get_db
@@ -48,30 +49,39 @@ async def get_usuario(name: str = None, db: AsyncIOMotorClient = Depends(get_db(
 @router.put("/usuarioFormulario/PUT")
 async def put_usuario(
     nombre: str,
-    data: usuarioFormularioModel,
+    data: usuarioFormularioModel = Body(..., embed=True),
     db: AsyncIOMotorClient = Depends(get_db(resource="resource1", method="PUT"))
 ):
-    """Endpoint para actualizar una cita en la base de datos"""
-    # Convertir el modelo a un diccionario
-    data = jsonable_encoder(data)
-    logging.info(f"put_usuario with nombre: {nombre} and data: {data}")
+    """Endpoint para actualizar un usuario en la base de datos"""
+    # Verifica si los campos a actualizar están presentes en los datos
+    campos_actualizables = ["name", "last_name", "last_name2", "email", "phone"]
+    data_dict = jsonable_encoder(data)
+    data_actualizar = {campo: data_dict[campo] for campo in campos_actualizables if campo in data_dict}
 
-    # Actualizar la cita
-    data['updated_at'] = datetime.now()
+    if not data_actualizar:
+        # Si no hay campos actualizables proporcionados, devuelve un error
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="No se proporcionaron campos actualizables"
+        )
+
+    # Actualizar el usuario
+    data_actualizar['updated_at'] = datetime.now()
     result = await db["usuarioFormularios"].update_one(
         {"name": nombre},
-        {"$set": data}
+        {"$set": data_actualizar}
     )
 
     if result.modified_count == 1:
-        # La cita fue actualizada exitosamente
-        return JSONResponse(content={"message": "Cita actualizada correctamente"})
+        # El usuario fue actualizado exitosamente
+        return JSONResponse(content={"message": "Usuario actualizado correctamente"})
     else:
-        # La cita no fue encontrada
+        # El usuario no fue encontrado
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Cita no encontrada"
+            detail="Usuario no encontrado"
         )
+
 
 #Metodo Delete usuario
 @router.delete("/usuarioFormulario")
